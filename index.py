@@ -105,7 +105,7 @@ class ConfirmThread(threading.Thread):
 
                     record_transaction(data)
                 except:
-                    print('confirmation >>>', sys.exc_info())
+                    print('confirmation >>> ', sys.exc_info())
             
             lock.release()
             time.sleep(30)
